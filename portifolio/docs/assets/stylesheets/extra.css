@@ -1,0 +1,31 @@
+.social-icons .custom-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(100%);
+  transition: transform 0.2s ease;
+}
+
+/* Botão fixo para alternar tema claro/escuro */
+#color-scheme-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+#color-scheme-toggle .icon { font-size: 1.1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  #color-scheme-toggle { transition: none; }
+}
